@@ -1,0 +1,31 @@
+.icon {
+  background: url(./icons.png) no-repeat;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-clip: padding-box;
+  background-position-x: 0;
+  background-position-y: -50px;
+
+  &:hover {
+    background-position-y: 0;
+  }
+
+  &.icon-bright {
+    background-position-y: 0;
+  }
+
+  $icon-width: 50px;
+  $icons: ("chevron": 0, "cutlery": 1, "cake": 2, "crown": 3, "boat": 4, "scuba": 5, "bolt": 6, "skull": 7);
+
+  @each $name, $position in $icons {
+    &.icon-#{$name} {
+      background-position-x: #{$position*$icon-width*-1};
+    }
+  }
+}
+
+
+
+
+

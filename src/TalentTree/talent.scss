@@ -1,0 +1,40 @@
+.talent {
+    color: #CCC;
+    background-color: #292929;
+    padding: 0;
+    font-size: 16px;
+    border: #999999 solid 3px;
+
+    transition: border-color 1s;
+    transition: color 0.5s;
+
+    &:hover {
+        color: white;
+    }
+
+    &.enabled {
+        border-color: lightskyblue;
+        color: white;
+    }
+}
+
+.talent-connector {
+    width: 100px;
+    height: 10px;
+    background-color: #444;
+
+    transition: background-color 1s;
+
+    &.enabled {
+        background-color: #777;
+    }
+}
+
+.point-info {
+    margin: 32px;
+    margin-left: 64px;
+    font-size: 20px;
+    padding: 16px;
+    background-color: #202020;
+    text-align: center;
+}
