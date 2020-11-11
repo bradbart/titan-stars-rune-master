@@ -16,8 +16,8 @@ export function TalentPathView(props: ITalentPathProps) {
         elements.push(<TalentView key={`talent-${x.name}`} talent={x} onToggle={props.onToggle.bind(null, props.path)}></TalentView>);
     });
 
-    return <div className="flex-container">
-        <div style={{ marginRight: "50px" }}>{props.path.name}</div>
+    return <div className="flex-container mobile-vertical-container">
+        <div className="talent-header">{props.path.name}</div>
         {elements}
     </div>;
 }

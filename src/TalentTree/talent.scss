@@ -1,20 +1,31 @@
+@import '../styles/_shared.scss';
+
+.talent-tree {
+    justify-content: start;
+}
+
 .talent {
-    color: #CCC;
-    background-color: #292929;
+    height: 56px;
     padding: 0;
-    font-size: 16px;
     border: #999999 solid 3px;
 
     transition: border-color 1s;
     transition: color 0.5s;
 
-    &:hover {
-        color: white;
-    }
-
     &.enabled {
         border-color: lightskyblue;
-        color: white;
+    }
+}
+
+.talent-header {
+    margin-right: 50px;
+
+    @include mobile {
+        & {
+            font-size: 24px;
+            margin-right: 0;
+            margin: 32px;
+        }
     }
 }
 
@@ -28,13 +39,34 @@
     &.enabled {
         background-color: #777;
     }
+
+    @include mobile {
+        & {
+            width: 10px;
+            height: 100px;
+        }
+    }
 }
 
-.point-info {
-    margin: 32px;
-    margin-left: 64px;
-    font-size: 20px;
-    padding: 16px;
-    background-color: #202020;
-    text-align: center;
+.point-info-container {
+
+    .point-info {
+        margin: 32px;
+        margin-left: 64px;
+        font-size: 20px;
+        padding: 16px;
+        background-color: #202020;
+        text-align: center;
+    }
+
+    @include mobile {
+        & {
+            order: 0;
+        }
+
+        & .point-info {
+            margin-left: 32px;
+        }
+    }
 }
+

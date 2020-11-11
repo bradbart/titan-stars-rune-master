@@ -12,11 +12,11 @@ export interface ITalentTreeProps {
 export function TalentTreeView(props: ITalentTreeProps) {
     const paths = props.tree.paths.map(x => <TalentPathView key={x.name} path={x} onToggle={props.onToggle}></TalentPathView>);
 
-    return <div className="flex-container" style={{ "justifyContent": "start" }}>
-        <div className="spaced-list">
+    return <div className="flex-container mobile-vertical-container talent-tree">
+        <div className="spaced-list ordered-flex-item">
             {paths}
         </div>
-        <div>
+        <div className="point-info-container ordered-flex-item">
             <PointUsageView tree={props.tree}></PointUsageView>
         </div>
     </div>;

@@ -1,0 +1,7 @@
+$desktop-min-width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$desktop-min-width - 1px}) {
+    @content;
+  }
+}

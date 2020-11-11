@@ -1,0 +1,16 @@
+@import 'styles/_shared.scss';
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.ordered-flex-item {
+    order: 1;
+}
+
+.mobile-vertical-container {
+    @include mobile {
+        flex-flow: column;
+    }
+}
