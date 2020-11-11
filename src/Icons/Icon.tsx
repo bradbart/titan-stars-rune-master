@@ -12,5 +12,5 @@ export function Icon(props: IconProps) {
         classes.push('icon-bright')
     }
 
-    return <div className={classes.join(" ")}></div>
+    return <i className={classes.join(" ")}></i>
 }
