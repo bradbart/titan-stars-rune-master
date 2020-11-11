@@ -34,3 +34,10 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Demos
+### Desktop
+![Image of Desktop Version of Talent Calculator 9000](./assets/desktop-demo.PNG)
+
+### Mobile
+![Image of Mobile Version of Talent Calculator 9000](./assets/mobile-demo.PNG)
