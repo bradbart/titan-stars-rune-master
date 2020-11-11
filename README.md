@@ -1,5 +1,5 @@
 # TitanStar Legends Rune Mastery Loadout Talent Calculator 9000
-Application that displays a set of talents for a user and allows the user to spec and respec. Talents must be selected in order on a specific path and a maximum of 6 talents can be selected. In mobile form factors, talent trees are displayed vertically to provide a better experience.
+Application that displays a set of talents for a user and allows the user to spec and respec. Talents must be selected in order on a specific path and a maximum of 6 talents can be selected. In mobile form factors, talent trees are displayed vertically to provide a better experience. Added simplified testing for components & more robust testing for the operations that manipulate the state of the talent tree.
 
 ## Technologies
 - [React](https://reactjs.org/)
